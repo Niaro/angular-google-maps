@@ -6672,6 +6672,7 @@ Original idea from: http://stackoverflow.com/questions/22758950/google-map-drawi
             spawned = uiGmapIsReady.spawn();
             resolveSpawned = function() {
               return spawned.deferred.resolve({
+                scope: scope,
                 instance: spawned.instance,
                 map: _gMap
               });
